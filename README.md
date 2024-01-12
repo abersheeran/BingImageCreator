@@ -2,7 +2,7 @@
 
 High quality image generation by Microsoft. Reverse engineered API.
 
-Inspired by [BingImageDownloader](https://github.com/yihong0618/BingImageCreator).
+Inspired by [BingImageCreator](https://github.com/yihong0618/BingImageCreator).
 
 ## Install
 
