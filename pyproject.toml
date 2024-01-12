@@ -1,0 +1,22 @@
+[project]
+name = "BingImageCreator"
+version = "0.1.0"
+description = "High quality image generation by Microsoft. Reverse engineered API."
+authors = [
+    {name = "abersheeran", email = "me@abersheeran.com"},
+]
+dependencies = [
+    "httpx>=0.26.0",
+    "fake-useragent>=1.4.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "unlicense"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+package-type = "library"
