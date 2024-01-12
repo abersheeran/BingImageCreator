@@ -53,7 +53,10 @@ class ImageGen:
         if auth_cookie is None and not all_cookies:
             raise RuntimeError("No auth cookie provided")
         self.session = httpx.AsyncClient(
-            base_url=BING_URL, headers=HEADERS, trust_env=True, proxy=proxy
+            base_url=BING_URL,
+            headers={**HEADERS, "user-agent": ua.random},
+            trust_env=True,
+            proxy=proxy,
         )
         if auth_cookie:
             self.session.cookies.update({"_U": auth_cookie})
